@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <STYLE>
+        
+        body
+            {
+                background-color: black;
+                height: 500px;
+            }
+           h1{
+            color: aliceblue;
+           }
+       
+        a{
+            text-decoration: none;
+            padding-left: 50px;
+            display: inline-block;
+            color: aliceblue;
+           
+        }
+        .arc{
+            padding-left: 700px;
+            display: flex;
+            margin: 15px;
+        }
+        .par{
+           padding-top: 200px;
+           padding-left: 200px;
+           color: aliceblue;
+           
+        }
+        strong{
+            font-size: 30px;
+        }
+        span{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        img{
+            padding-left: 900px;
+           
+           position: absolute;
+          
+           float: inline-start;
+           padding-right: 50px;
+           border-radius: 1000px;
+           
+        }
+        #contact{
+            padding-left:200px ;
+            padding-top: 200px;
+            color: white;
+            width: 5px;
+
+        }
+       input {
+        width: 700px;
+        height: 30px;
+        border-radius: 100px;
+       }
+       textarea{
+        width: 500px;
+        height: 40px;
+        border-radius: 100px;
+       }
+       button{
+        height: 20px;
+        width: 100px;
+        color: gray;
+       }
+        
+        
+         
+
+           
+          
+            
+        
+       
+        
+       
+    </STYLE>
+    <script>
+        Vdocument.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById("name").value;
+    document.getElementById("formMessage").textContent = `Thanks, ${name}! Your message has been sent.`;
+    
+    this.reset();
+});
+
+    </script>
+</head>
+<body>
+    <h1>MY PORTFOLIO</h1>
+
+   <div class="arc">
+        <a href ="">HOME</a>
+        <a href ="">FEATURES</a>
+        <a href ="">SKILLS</a>
+       <a href ="">PORTFOLIO</a>
+        <a href ="">CONTACT</a>
+   </div>
+  
+  
+  
+   <br>
+   <div class="par">
+    <img src="c:\Users\priya\Downloads\handsome-businessman-with-laptop-isolated-white-background (1).jpg" height="300px" width="300px">
+   <h4>WELCOME TO MY WORLD</h4>
+  
+   
+    <strong>HI,I am <SPAN>VISHNU PRIYAN</SPAN> a Developer</strong>
+    <p> I have create a simple porfolio website with Html and Css</p>
+
+
+
+    <button type="button">login</button>
+    <button type="menu">download doc</button><BR><BR>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-facebook-messenger"></i>
+    
+   </div>
+
+   
+
+   <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+       
+       <input type="text" id="name" placeholder="Your Name" required  ><br><br>
+       <input type="email" id="email" placeholder="Your Email" required><br><br>
+        <textarea id="message" placeholder="Your Message" required ></textarea><br><br>
+        <button type="submit">submit</button>
+        
+    </form>
+    <p id="formMessage"></p>
+</section>
+  
+   
+    
+</body>
+</html>
+
+
